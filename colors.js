@@ -5,10 +5,10 @@ module.exports = {
   text: '#333333',
 
   primary: '#7c37ad',
-  primaryLight: '#ae66df',
-  primaryDark: '#4b007d',
+  primaryLight: '#e3fdfd',
+  primaryDark: '#7c37ad',
 
-  secondary: '#ff4081',
-  secondaryLight: '#ff79b0',
-  secondaryDark: '#c60055',
+  secondary: '#71c9ce',
+  secondaryLight: '#e3fdfd',
+  secondaryDark: '#71c9ce',
 };

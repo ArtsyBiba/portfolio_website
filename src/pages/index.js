@@ -7,15 +7,20 @@ import Writing from '../sections/Writing';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const IndexPage = () => (
-  <Layout>
-    <Header />
-    <Landing />
-    <About />
-    <Projects />
-    <Writing />
-    <Footer />
-  </Layout>
+const IndexPage = () => ( <
+  Layout >
+  <
+  Header / >
+  <
+  Landing / >
+  <
+  Projects / >
+  <
+  About / >
+  <
+  Footer / >
+  <
+  /Layout>
 );
 
 export default IndexPage;
