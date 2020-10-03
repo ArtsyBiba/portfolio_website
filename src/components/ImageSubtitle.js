@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Box } from 'rebass/styled-components';
 import PropTypes from 'prop-types';
 
-const BORDER_SPACING = '20px';
+const BORDER_SPACING = '40px';
 const BORDER_RADIUS = '8px';
 
 const BORDER_PATH_MAP = {
@@ -23,9 +23,8 @@ const ImageSubtitle = styled(Box)`
   position: absolute;
   display: inline;
   padding: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
 
   ${(props) => props.x}: 0;
   ${(props) => props.y}: 0;
