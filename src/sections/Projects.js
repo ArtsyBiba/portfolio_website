@@ -76,14 +76,13 @@ const ProjectTag = styled.div`
 	}
 `;
 
-const handleCardClick = (e, projectUrl) => {
+const handleCardClick = (e, repositoryUrl) => {
 	e.stopPropagation();
-	e.nativeEvent.stopImmediatePropagation();
-	window.open(projectUrl);
+	window.open(repositoryUrl);
 };
 
 const Project = ({ name, description, projectUrl, repositoryUrl, type, publishedDate, logo }) => (
-	<Card p={0} style={{ cursor: 'pointer' }} onClick={(e) => handleCardClick(e, projectUrl)}>
+	<Card p={0} style={{ cursor: 'pointer' }} onClick={() => window.open(`${projectUrl}`)}>
 		<Flex style={{ height: CARD_HEIGHT }}>
 			<TextContainer>
 				<span>
@@ -110,7 +109,9 @@ const Project = ({ name, description, projectUrl, repositoryUrl, type, published
 							<SocialLink
 								name="Check repository"
 								fontAwesomeIcon="github"
-								onClick={() => window.open(`${repositoryUrl}`)}
+								onClick={() => {
+									(e) => handleCardClick(e, repositoryUrl);
+								}}
 								url={repositoryUrl}
 							/>
 						</Box>
