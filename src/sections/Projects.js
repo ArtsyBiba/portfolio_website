@@ -78,6 +78,7 @@ const ProjectTag = styled.div`
 
 const handleCardClick = (e, projectUrl) => {
 	e.stopPropagation();
+	e.nativeEvent.stopImmediatePropagation();
 	window.open(projectUrl);
 };
 
@@ -112,9 +113,6 @@ const Project = ({ name, description, projectUrl, repositoryUrl, type, published
 								onClick={() => window.open(`${repositoryUrl}`)}
 								url={repositoryUrl}
 							/>
-						</Box>
-						<Box mx={1} fontSize={5}>
-							<SocialLink name="See project" fontAwesomeIcon="globe" url={projectUrl} />
 						</Box>
 					</Flex>
 				</ProjectTag>
